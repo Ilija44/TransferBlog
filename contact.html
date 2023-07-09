@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kontaktseite</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><img src="Pictures/logo.png" alt="Logo" class="logo"> Kontakt</h1>
+    <a href="HomePage.html" class="home-button">Zurück zur Homepage</a>
+  </header>
+
+  <div class="content-container">
+    <div class="author-info">
+      <h2>Autoren</h2>
+      <p>Hier findest du Informationen über unsere Autoren.</p>
+      <img class="card-image" src="Pictures/Iljia-Portrait.png" alt="Bild von Ilija Predolac">
+      <p class="author-name">Ilija Predolac</p>
+      <p>Ilija hat diese Seite entwickelt und alle Artikel zu den aktuellen News der Fussballwelt geschrieben.</p>
+      <p class="author-title">Alter: <span class="author-info-text">16</span></p>
+      <p class="author-title">Firma: <span class="author-info-text">Google</span></p>
+      <p class="author-title">E-Mail: <span class="author-info-text">ilija.predolac@gmail.com</span></p>
+    </div>
+  </div>
+  
+
+    <div class="contact-form">
+      <h2>Kontaktformular</h2>
+      <p>Für Fragen rund um den Blog stehen wir Ihnen gerne zur Verfügung. Bitte füllen Sie das Formular aus und wählen Sie den entsprechenden Betreff.</p>
+      
+      <form action="kontaktformular.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Betreff:</label>
+        <select id="subject" name="subject">
+          <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+          <option value="Technische Unterstützung">Technische Unterstützung</option>
+          <option value="Kooperationsanfrage">Kooperationsanfrage</option>
+          <option value="Feedback">Feedback</option>
+         
+        </select>
+        
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Absenden">
+      </form>
+    </div>
+  </div>
+
+  <footer class="bottom-bar">
+    <div class="bottom-bar-content">
+      <p>Ilija Predolac</p>
+      <p>Arbeitsort: Zürich</p>
+      <p>Modul 293</p>
+    </div>
+  </footer>
+</body>
+</html>
